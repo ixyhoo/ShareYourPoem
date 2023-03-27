@@ -1,0 +1,12 @@
+<h1>Les plus belles poésies</h1>
+<br>
+ <div><%= link_to "Publier un poème", new_poesie_path() %></div> 
+<br>
+<% @poesies.each do |poesie|%>
+    <h2><%= poesie.nom %></h2><br>
+    <div><%= poesie.contenu %></div><br>
+    <i><%= poesie.auteur %></i>
+    <div><%= link_to "Vos poèmes", poesie_path(poesie) %></div> 
+<hr>
+<% end %>
+
