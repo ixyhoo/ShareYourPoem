@@ -6,5 +6,5 @@ root "home#index"
   # Defines the root path route ("/")
   # root "articles#index"
 
-  resources :poesies, only: [:show, :index, :new, :create]
+  resources :poesies, only: [:show, :index, :new, :create, :edit, :update, :destroy]
 end

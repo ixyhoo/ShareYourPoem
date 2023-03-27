@@ -1,2 +1,7 @@
 class Poesie < ApplicationRecord
-end
+    
+    validates :nom, presence: true
+    validates :contenu, presence: true
+    validates :auteur, presence: true
+  end
+  

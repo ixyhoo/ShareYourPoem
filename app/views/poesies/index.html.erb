@@ -6,7 +6,9 @@
     <h2><%= poesie.nom %></h2><br>
     <div><%= poesie.contenu %></div><br>
     <i><%= poesie.auteur %></i>
-    <div><%= link_to "Vos poèmes", poesie_path(poesie) %></div> 
+    <div><%= link_to "voir vos poèmes", poesie_path(poesie) %></div> 
+    <div><%= link_to "modifier vos poèmes", edit_poesie_path(poesie) %></div>
+    <div><%= link_to "supprimer vos poèmes", poesie_path(poesie), method::delete %></div> 
 <hr>
 <% end %>
 

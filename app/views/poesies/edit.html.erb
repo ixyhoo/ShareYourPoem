@@ -1,14 +1,7 @@
-<h2>Publier un nouveau poème</h2>
+<h2>Modifier vos poèmes<h2>
 
 <%= form_with model: @poesie, local: true do |form|%>
-<% if @poesie.errors.any? %>
-    <h2>Une erreur c'est produite</h2>
-    <ul>
-    <% @poesie.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-    <% end %>
-    </ul>
-<% end %>
+
 
 <p>
 <%= form.label :nom %>
@@ -23,6 +16,6 @@
 <%= form.text_field :auteur %>
 </p>
 <p>
-<%= form.submit " Publier votre poesie"%>
+<%= form.submit " Modifier votre poesie"%>
 </p>
 <% end %>
